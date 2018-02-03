@@ -48,6 +48,10 @@
 			<artifactId>spring-boot-starter-mail</artifactId>
 			<version>1.5.10.RELEASE</version>
 		</dependency>
+		<dependency>
+			<groupId>org.freemarker</groupId>
+			<artifactId>freemarker</artifactId>
+		</dependency>
 	</dependencies>
 
 	<dependencyManagement>

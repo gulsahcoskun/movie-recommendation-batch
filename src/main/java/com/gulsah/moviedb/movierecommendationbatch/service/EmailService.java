@@ -1,15 +1,16 @@
 package com.gulsah.moviedb.movierecommendationbatch.service;
 
+import com.gulsah.moviedb.movierecommendationbatch.model.Mail;
 import org.springframework.mail.SimpleMailMessage;
+
+import java.util.Locale;
 
 /**
  * Created by GulsahCoskun on 3.02.2018.
  */
 public interface EmailService {
 
-    void sendSimpleMessage(String to, String subject, String text);
+    void sendSimpleMessage(final Mail mail);
 
-    void sendMessageWithTemplate(String to, String subject, SimpleMailMessage template, String ...templateArgs);
-
-    void sendMessageWithAttachments(String to, String subject,String text, String pathToAttachment);
+    void sendMessageWithAttachments(final Mail mail);
 }
